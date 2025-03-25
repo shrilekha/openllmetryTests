@@ -1,0 +1,36 @@
+%runfile C:/Users/dtadmin/Desktop/TestScripts/openLLMetryTest2.py --wdir
+2025-03-25 20:30:41,588 - INFO - Traceloop Base URL: https://yex81559.sprint.dynatracelabs.com
+2025-03-25 20:30:41,588 - DEBUG - Starting new HTTPS connection (1): yex81559.sprint.dynatracelabs.com:443
+2025-03-25 20:30:42,119 - DEBUG - https://yex81559.sprint.dynatracelabs.com:443 "GET / HTTP/1.1" 200 None
+2025-03-25 20:30:42,288 - DEBUG - Resetting dropped connection: yex81559.sprint.dynatracelabs.com
+2025-03-25 20:30:42,772 - DEBUG - https://yex81559.sprint.dynatracelabs.com:443 "POST /v1/traces HTTP/1.1" 200 1160
+2025-03-25 20:30:42,772 - INFO - Successfully connected to Traceloop Base URL
+2025-03-25 20:30:42,772 - INFO - Traceloop initialized successfully
+Traceloop exporting traces to https://yex81559.sprint.dynatracelabs.com, authenticating with custom headers
+
+2025-03-25 20:30:42,989 - INFO - OpenAI client initialized successfully
+2025-03-25 20:30:43,555 - DEBUG - https://yex81559.sprint.dynatracelabs.com:443 "POST /v1/traces HTTP/1.1" 200 1164
+2025-03-25 20:30:43,724 - DEBUG - https://yex81559.sprint.dynatracelabs.com:443 "POST /v1/traces HTTP/1.1" 200 1163
+2025-03-25 20:30:43,724 - DEBUG - Using selector: SelectSelector
+2025-03-25 20:30:43,740 - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'headers': {'traceparent': '00-a143220b4344adfe22bae325a9a9ca52-b93389febb375600-01'}, 'files': None, 'json_data': {'messages': [{'content': 'Explain the business of company Dynatrace in a max of 5 words', 'role': 'user'}], 'model': 'gpt-3.5-turbo', 'stream': False}}
+2025-03-25 20:30:43,755 - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2025-03-25 20:30:43,755 - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=None socket_options=None
+2025-03-25 20:30:43,771 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002B7FA2A3C50>
+2025-03-25 20:30:43,771 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000002B7FA30A0F0> server_hostname='api.openai.com' timeout=None
+2025-03-25 20:30:43,802 - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002B7FA2EA9D0>
+2025-03-25 20:30:43,802 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-03-25 20:30:43,802 - DEBUG - send_request_headers.complete
+2025-03-25 20:30:43,802 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-03-25 20:30:43,802 - DEBUG - send_request_body.complete
+2025-03-25 20:30:43,802 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-03-25 20:30:44,783 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 25 Mar 2025 15:00:45 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'user-og6qw4v8q2alzq1zkkyi8k3d'), (b'openai-processing-ms', b'271'), (b'openai-version', b'2020-10-01'), (b'x-ratelimit-limit-requests', b'10000'), (b'x-ratelimit-limit-tokens', b'200000'), (b'x-ratelimit-remaining-requests', b'9999'), (b'x-ratelimit-remaining-tokens', b'199982'), (b'x-ratelimit-reset-requests', b'8.64s'), (b'x-ratelimit-reset-tokens', b'5ms'), (b'x-request-id', b'req_f11f2b160cf3ac43265146c8253d8c42'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'cf-cache-status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=sUyyjAqB.jnKCTAJE4R8k_oQY1sxr4nXfnK.kIX83uI-1742914845-1.0.1.1-M8rLMBsINhriLIzjv1MwDBVy3BuStskTIoIBP5BjidwH7XJ2bPjWod5K8RwYjMH9ipA5v6AqN5k4qjDvwI0oSU07Q6Glp19LC_T1HciIitc; path=/; expires=Tue, 25-Mar-25 15:30:45 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'X-Content-Type-Options', b'nosniff'), (b'Set-Cookie', b'_cfuvid=i5cDVRQl.3G0RdxyBrla6n9haN4AD.j0MEDsWpqnaBk-1742914845047-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'925f478f8f183fe8-BOM'), (b'Content-Encoding', b'br'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-03-25 20:30:44,783 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-25 20:30:44,783 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-03-25 20:30:44,783 - DEBUG - receive_response_body.complete
+2025-03-25 20:30:44,783 - DEBUG - response_closed.started
+2025-03-25 20:30:44,783 - DEBUG - response_closed.complete
+2025-03-25 20:30:44,783 - DEBUG - HTTP Response: POST https://api.openai.com/v1/chat/completions "200 OK" Headers([('date', 'Tue, 25 Mar 2025 15:00:45 GMT'), ('content-type', 'application/json'), ('transfer-encoding', 'chunked'), ('connection', 'keep-alive'), ('access-control-expose-headers', 'X-Request-ID'), ('openai-organization', 'user-og6qw4v8q2alzq1zkkyi8k3d'), ('openai-processing-ms', '271'), ('openai-version', '2020-10-01'), ('x-ratelimit-limit-requests', '10000'), ('x-ratelimit-limit-tokens', '200000'), ('x-ratelimit-remaining-requests', '9999'), ('x-ratelimit-remaining-tokens', '199982'), ('x-ratelimit-reset-requests', '8.64s'), ('x-ratelimit-reset-tokens', '5ms'), ('x-request-id', 'req_f11f2b160cf3ac43265146c8253d8c42'), ('strict-transport-security', 'max-age=31536000; includeSubDomains; preload'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=sUyyjAqB.jnKCTAJE4R8k_oQY1sxr4nXfnK.kIX83uI-1742914845-1.0.1.1-M8rLMBsINhriLIzjv1MwDBVy3BuStskTIoIBP5BjidwH7XJ2bPjWod5K8RwYjMH9ipA5v6AqN5k4qjDvwI0oSU07Q6Glp19LC_T1HciIitc; path=/; expires=Tue, 25-Mar-25 15:30:45 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('x-content-type-options', 'nosniff'), ('set-cookie', '_cfuvid=i5cDVRQl.3G0RdxyBrla6n9haN4AD.j0MEDsWpqnaBk-1742914845047-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('server', 'cloudflare'), ('cf-ray', '925f478f8f183fe8-BOM'), ('content-encoding', 'br'), ('alt-svc', 'h3=":443"; ma=86400')])
+2025-03-25 20:30:44,783 - DEBUG - request_id: req_f11f2b160cf3ac43265146c8253d8c42
+2025-03-25 20:30:44,951 - DEBUG - https://yex81559.sprint.dynatracelabs.com:443 "POST /v1/traces HTTP/1.1" 200 1162
+2025-03-25 20:30:45,114 - DEBUG - https://yex81559.sprint.dynatracelabs.com:443 "POST /v1/traces HTTP/1.1" 200 1161
+content='Digital performance management software company.' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 7, 'prompt_tokens': 23, 'total_tokens': 30, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0}, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0}}, 'model_name': 'gpt-3.5-turbo-0125', 'system_fingerprint': None, 'id': 'chatcmpl-BF03gWZiIIvvS41c8O9OAglKxrUmL', 'finish_reason': 'stop', 'logprobs': None} id='run-a1bd6531-ca63-4da6-bf9b-b93b6041ab10-0' usage_metadata={'input_tokens': 23, 'output_tokens': 7, 'total_tokens': 30, 'input_token_details': {'audio': 0, 'cache_read': 0}, 'output_token_details': {'audio': 0, 'reasoning': 0}}
